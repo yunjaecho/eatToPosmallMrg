@@ -12,7 +12,7 @@ object ZIPConvert {
   var posmallConn: Connection = null
 
   def main(args: Array[String]): Unit = {
-    val stream: InputStream = getClass.getResourceAsStream("DELIVERY_20171116_011524_성공.txt")
+    val stream: InputStream = getClass.getResourceAsStream("B2C_판매사_성공.txt")
     val lines = Source.fromInputStream(stream, "ISO-8859-1").getLines().toList
 
     posmallConn = DatabaseConnection.getPrdPosmallDbConn()

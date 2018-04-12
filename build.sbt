@@ -4,5 +4,7 @@ version := "1.0"
 
 scalaVersion := "2.11.7"
 
+unmanagedBase <<= baseDirectory { base => base / "libs" }
+
 libraryDependencies += "com.sksamuel.scrimage" % "scrimage-core_2.11" % "2.1.8"
 libraryDependencies += "com.lihaoyi" %% "fastparse" % "0.4.3"
